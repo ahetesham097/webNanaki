@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+li, a, button{
+    font-weight: bold;
+    font-size: 20px ;
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+.navLogo{
+    width: 180px;
+    cursor: pointer;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: red;
+    font-size: 24px;
+}
+button{
+    padding: 10px;
+    border: none;
+    background-color: red;
+    cursor: pointer;
+    color: black;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    color: white;
+    background-color: black;
+}
+/* Slider */
+.container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    width: 100%;
+    height: 400px;
+    background: url("https://s15543.pcdn.co/wp-content/uploads/2022/05/led-display-lifetime.jpg");
+    background-size: cover;
+    animation: slide 15s infinite;
+}
+@keyframes slide {
+    20%{
+        background: url("https://neon-wave.es/wp-content/uploads/2021/03/slider_all-1024x409.jpg");
+        background-size: cover;
+    }
+    40%{
+        background: url("https://cpimg.tistatic.com/05552577/b/4/LED-Signages.jpg");
+        background-size: cover;
+    }
+    60%{
+        background: url("https://sc04.alicdn.com/kf/H669606571b5848ff832fc356b2f798cbl/247569875/H669606571b5848ff832fc356b2f798cbl.jpg");
+        background-size: cover;
+    }
+    80%{
+        background: url("https://2.wlimg.com/product_images/bc-full/dir_172/5138502/watermark/outdoor-advertising-billboard-1507785245-3390528.jpeg");
+        background-size: cover;
+    }
+    100%{
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_P5T-IcOXVrztoxK9u0OiZu1_KiLiL_A8Sg&usqp=CAU");
+        background-size: cover;
+    }
+    
+    
+}
